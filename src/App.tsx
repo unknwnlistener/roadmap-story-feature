@@ -1,8 +1,8 @@
 // import { FlickeringGrid } from "@/components/ui/flickering-grid"
 import AddStoryButton from "@/components/AddStoryButton"
 import { useState } from "react"
-import ImageSlide from "./components/ImageSlide";
 import StoryHighlights from "./components/StoryHighlights";
+import ImageSlidesComponent from "./components/ImageSlidesComponent";
 
 
 export interface StoryProps {
@@ -11,7 +11,7 @@ export interface StoryProps {
 }
 
 function App() {
-  const [showImageSlide, setShowImageSlide] = useState<StoryProps | null>(null);
+  const [showImageSlide, setShowImageSlide] = useState<number>(-1);
   const [stories, setStories] = useState<StoryProps[]>([]);
 
   return (
@@ -29,12 +29,9 @@ function App() {
           <AddStoryButton stories={stories} setStories={setStories} />
           <StoryHighlights setShowImageSlide={setShowImageSlide} stories={stories} />
         </section>
-        <article className="mt-4 lg:max-w-96">
-
-          {showImageSlide &&
-            <ImageSlide image={showImageSlide} />
-          }
-        </article>
+        {showImageSlide >= 0 &&
+          <ImageSlidesComponent stories={stories} showImageSlide={showImageSlide} setShowImageSlide={setShowImageSlide} />
+        }
       </div>
     </div>
   )

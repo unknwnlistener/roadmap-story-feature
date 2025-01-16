@@ -1,7 +1,6 @@
 import { Plus } from "lucide-react";
 import { Button } from "./ui/button";
 import { ChangeEvent, useEffect } from "react";
-import StoryHighlights from "./StoryHighlights";
 import { StoryProps } from "@/App";
 
 const TIME_TO_LIVE = 60000;
