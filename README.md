@@ -75,7 +75,9 @@ To get a local copy up and running, follow these simple steps.
 
 ## Technologies Used
 
-- React (version x.x.x)
+- React (v 18.3)
+- Typescript (v 5.6)
+- TailwindCSS (v 3.4)
 
 ---
 
