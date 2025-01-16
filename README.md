@@ -90,6 +90,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Helpful Resources
 
 - Project setup guide with Vite. [https://vite.dev/guide/](https://vite.dev/guide/)
+- Setting expiry to localStorage [https://www.sohamkamani.com/javascript/localstorage-with-ttl-expiry/](https://www.sohamkamani.com/javascript/localstorage-with-ttl-expiry/)
+- Storing image as a string [https://medium.com/nerd-for-tech/how-to-store-an-image-to-a-database-with-react-using-base-64-9d53147f6c4f](https://medium.com/nerd-for-tech/how-to-store-an-image-to-a-database-with-react-using-base-64-9d53147f6c4f)
 
 ---
 
